@@ -42,7 +42,7 @@
             }
             document.getElementById("loader").style.display = "flex";
 
-            fetch("https://script.google.com/macros/s/AKfycbwH9lcMM0UrL1J1NaolNNQTpmIiBZzKhQVzOSuq_F9aSHeu56VVt6yHh1WOLM8ikwi_/exec?username=" + username)
+            fetch(https://script.google.com/macros/s/AKfycbyyHJ2tJRTZVdHpCRZS9nWCYXiJ1lMbePUBeE1yOLgrUo9Nqlf-zCprDuiIxq2OD6FrVg/exec?username=" + username)
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
@@ -51,7 +51,7 @@
                             alert("Insufficient balance.");
                             document.getElementById("loader").style.display = "none"; // Hide loader
                         } else {
-                            fetch("https://script.google.com/macros/s/AKfycbwH9lcMM0UrL1J1NaolNNQTpmIiBZzKhQVzOSuq_F9aSHeu56VVt6yHh1WOLM8ikwi_/exec", {
+                            fetch("https://script.google.com/macros/s/AKfycbyyHJ2tJRTZVdHpCRZS9nWCYXiJ1lMbePUBeE1yOLgrUo9Nqlf-zCprDuiIxq2OD6FrVg/exec", {
                                 method: "POST",
                                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                                 body: new URLSearchParams({ username, upi, amount })
